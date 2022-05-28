@@ -1,0 +1,64 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>predict</title>
+    <style>
+        body{
+            background-image:url("{% static 'img11.jpg'%}");
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+            background-size:cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>please enter foll values</h1>
+        <form action="result">
+            <div class="row">
+                <div class="col-sm-4" style="background-color: bisque;">
+                <p>avg area income </p>
+                <input type="text" name="n1">
+                </div>
+
+                <div class="col-sm-4" style="background-color: rgb(203, 255, 196);">
+                    <p>avg area house age </p>
+                    <input type="text" name="n2">
+                    </div>
+
+                    <div class="col-sm-4" style="background-color: rgb(129, 190, 14);">
+                        <p>avg area number of rooms </p>
+                        <input type="text" name="n3">
+                        </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4" style="background-color: rgba(20, 163, 44, 0.514);">
+                    <p>avg area number of bedrooms </p>
+                    <input type="text" name="n4">
+                    </div>
+
+                    <div class="col-sm-4" style="background-color: rgba(149, 163, 20, 0.514);">
+                        <p>avg area population </p>
+                        <input type="text" name="n5">
+                        </div>
+
+
+
+            </div>
+            <div class="row">
+                <input type="submit" value="PREDICT">
+
+            </div>
+        </form>
+        <DIV class="row">
+            <h2>{{result2}}</h2>
+        </DIV>
+    </div>
+</div>
+</body>
+</html>
